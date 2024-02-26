@@ -14,15 +14,25 @@
   <!-- ######################################################### -->
   <body class="min-h-screen w-screen text-white">
       <div class="flex h-[85dvh] lg:h-screen w-screen flex-col">
-          <div class="m-0 flex items-center justify-center bg-black p-4 w-screen">
-              <a href="#"><img class="h-16 mr-5 " src="./resources/logo01-Cropped.png"></img></a>
-              <div>
+          <div class="m-0 flex items-center justify-between lg:justify-center bg-black p-6 lg:p-4 w-screen">
+              <a href="#"><img class="h-12 lg:h-16 lg:mr-5" src="./resources/logo01-Cropped.png"></img></a>
+              <button id="mobile-menu-btn" class="inline lg:hidden"> 
+                  <i class="text-2xl fa-solid fa-bars"></i>
+              </button>
+              <div class="hidden lg:inline">
                   <a href="#" class="mr-4 font-semibold text-red-600">Home</a>
                   <a href="#" class="mr-4 font-medium hover:text-red-600">About Us</a>
                   <a href="#" class="mr-4 font-medium hover:text-red-600">Our Services</a>
                   <a href="#" class="mr-4 font-medium hover:text-red-600">Work With Us</a>
                   <a href="#" class="mr-4 font-medium hover:text-red-600">Contact</a>
               </div>
+          </div>
+          <div id="mobile-menu" class="hidden flex-col">
+              <a href="#" class="p-2 font-semibold text-white bg-gray-600">Home</a>
+              <a href="#" class="p-2 font-medium text-gray-800 hover:bg-gray-600 hover:text-white">About Us</a>
+              <a href="#" class="p-2 font-medium text-gray-800 hover:bg-gray-600 hover:text-white">Our Services</a>
+              <a href="#" class="p-2 font-medium text-gray-800 hover:bg-gray-600 hover:text-white">Work With Us</a>
+              <a href="#" class="p-2 font-medium text-gray-800 hover:bg-gray-600 hover:text-white">Contact</a>
           </div>
           <div class="grow w-screen bg-cover flex flex-col items-center justify-center bg-center" style="background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('./resources/business-slides-2.jpg')">
               <h1 class="text-3xl lg:text-7xl mb-3 font-bold text-center">Over 20 years of </br> translation experience</h1>
@@ -212,5 +222,6 @@
     <div class="flex w-full justify-center py-6 text-center font-medium text-base bg-[#2E359F]">
         <h1> Copyright © Freedom Translations 2024 </br> All rights reserved</h1>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

@@ -14,23 +14,124 @@
   <!-- ######################################################### -->
   <body class="min-h-screen w-screen text-white">
       <div class="flex h-[85dvh] lg:h-screen w-screen flex-col">
-          <div class="m-0 flex bg-black p-0 h-20 w-full">
-              <a href="#"><img class="h-16" src="./resources/logo01.png"></img></a>
-              <a href="#">Home</a>
-              <a href="#">About Us</a>
-              <a href="#">Our Services</a>
-              <a href="#">Work With Us</a>
-              <a href="#">Contact</a>
+          <div class="m-0 flex items-center justify-center bg-black p-4 w-screen">
+              <a href="#"><img class="h-16 mr-5 " src="./resources/logo01-Cropped.png"></img></a>
+              <div>
+                  <a href="#" class="mr-4 font-semibold text-red-600">Home</a>
+                  <a href="#" class="mr-4 font-medium hover:text-red-600">About Us</a>
+                  <a href="#" class="mr-4 font-medium hover:text-red-600">Our Services</a>
+                  <a href="#" class="mr-4 font-medium hover:text-red-600">Work With Us</a>
+                  <a href="#" class="mr-4 font-medium hover:text-red-600">Contact</a>
+              </div>
           </div>
           <div class="grow w-screen bg-cover flex flex-col items-center justify-center bg-center" style="background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('./resources/business-slides-2.jpg')">
               <h1 class="text-3xl lg:text-7xl mb-3 font-bold text-center">Over 20 years of </br> translation experience</h1>
-              <a href="/contact" class="border-2 py-3 px-4 font-semibold w-fit mt-4 border-white">Request for a Quote</a>
+              <a href="/contact" class="border py-5 px-6 font-semibold w-fit mt-4 border-white hover:bg-red-600 hover:border-red-600">
+                  Request for a Quote
+              </a>
           </div>
       </div>
     <!-- ######################################################### -->
-    <div class="h-[50dvh]">
-
-
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-10 gap-y-16 lg:px-20 py-14">
+          <div class="relative w-screen aspect-square lg:w-auto bg-cover flex flex-col items-center justify-center bg-center" style="background-image:linear-gradient(rgba(42, 69, 112, 0.7), rgba(42, 69, 112, 0.7) ), url('./resources/grid-1.jpg')">
+              <h1 class="text-2xl mb-3 font-bold text-center">
+                  CERTIFIED AFFIDAVIT</br>TRANSLATION
+              </h1>
+              <span class="px-10 text-center w-fit mt-4 border-white">
+                  These translations are accepted by USCIS, US colleges, professional boards, banks, government, academic and private institutions.
+              </span>
+              <span class="absolute -bottom-7 right-12 w-16 rounded-full aspect-square bg-[#cf190e] inline-grid items-center text-center">
+                  <i class="fa text-2xl fa-desktop" aria-hidden="true"></i>
+              </span>
+          </div>
+          <div class="relative w-screen aspect-square lg:w-auto bg-cover flex flex-col items-center justify-center bg-center" style="background-image:linear-gradient(rgba(42, 69, 112, 0.7), rgba(42, 69, 112, 0.7) ), url('./resources/grid-2.jpg')">
+              <h1 class="text-2xl mb-3 font-bold text-center">
+                  SWORN</br>TRANSLATION
+              </h1>
+              <span class="px-10 text-center w-fit mt-4 border-white">
+                  Translations certified by the State Trade Board (also to Latin America & Europe)
+              </span>
+              <span class="absolute -bottom-7 right-12 w-16 rounded-full aspect-square bg-[#cf190e] inline-grid items-center text-center">
+                  <i class="fa text-2xl fa-bullhorn" aria-hidden="true"></i>
+              </span>
+          </div>
+          <div class="relative w-screen aspect-square lg:w-auto bg-cover flex flex-col items-center justify-center bg-center" style="background-image:linear-gradient(rgba(42, 69, 112, 0.7), rgba(42, 69, 112, 0.7) ), url('./resources/grid-3.jpg')">
+              <h1 class="text-2xl mb-3 font-bold text-center">
+                  LEGAL</br>TRANSLATION
+              </h1>
+              <span class="px-10 text-center w-fit mt-4 border-white">
+                  Translation of personal documents, agreements, contracts, power of attorney.
+              </span>
+              <span class="absolute -bottom-7 right-12 w-16 rounded-full aspect-square bg-[#cf190e] inline-grid items-center text-center">
+                  <i class="fa text-2xl fa-desktop" aria-hidden="true"></i>
+              </span>
+          </div>
+          <div class="relative w-screen aspect-square lg:w-auto bg-cover flex flex-col items-center justify-center bg-center" style="background-image:linear-gradient(rgba(42, 69, 112, 0.7), rgba(42, 69, 112, 0.7) ), url('./resources/grid-4.jpg')">
+              <h1 class="text-2xl mb-3 font-bold text-center">
+                  TECHNICAL</br>TRANSLATION
+              </h1>
+              <span class="px-10 text-center w-fit mt-4 border-white">
+                  Translations of literary texts, scientific texts, technical manuals, etc.
+              </span>
+              <span class="absolute -bottom-7 right-12 w-16 rounded-full aspect-square bg-[#cf190e] inline-grid items-center text-center">
+                  <i class="fa text-2xl fa-bullhorn" aria-hidden="true"></i>
+              </span>
+          </div>
+          <div class="relative w-screen aspect-square lg:w-auto bg-cover flex flex-col items-center justify-center bg-center" style="background-image:linear-gradient(rgba(42, 69, 112, 0.7), rgba(42, 69, 112, 0.7) ), url('./resources/grid-5.jpg')">
+              <h1 class="text-2xl mb-3 font-bold text-center">
+                  REGULAR</br>TRANSLATION
+              </h1>
+              <span class="px-10 text-center w-fit mt-4 border-white">
+                  Translation of websites, proposals, Résumé, etc.
+              </span>
+              <span class="absolute -bottom-7 right-12 w-16 rounded-full aspect-square bg-[#cf190e] inline-grid items-center text-center">
+                  <i class="fa text-2xl fa-pencil-ruler" aria-hidden="true"></i>
+              </span>
+          </div>
+          <div class="relative w-screen aspect-square lg:w-auto bg-cover flex flex-col items-center justify-center bg-center" style="background-image:linear-gradient(rgba(42, 69, 112, 0.7), rgba(42, 69, 112, 0.7) ), url('./resources/grid-6.jpg')">
+              <h1 class="text-2xl mb-3 font-bold text-center">
+                  SUBTITLING
+              </h1>
+              <span class="px-10 text-center w-fit mt-4 border-white">
+                  Movies, cartoons & institutional movies.
+              </span>
+              <span class="absolute -bottom-7 right-12 w-16 rounded-full aspect-square bg-[#cf190e] inline-grid items-center text-center">
+                  <i class="fa text-2xl fa-pencil-ruler" aria-hidden="true"></i>
+              </span>
+          </div>
+          <div class="relative w-screen aspect-square lg:w-auto bg-cover flex flex-col items-center justify-center bg-center" style="background-image:linear-gradient(rgba(42, 69, 112, 0.7), rgba(42, 69, 112, 0.7) ), url('./resources/grid-7.jpg')">
+              <h1 class="text-2xl mb-3 font-bold text-center">
+                  PROOFREADING
+              </h1>
+              <span class="px-10 text-center w-fit mt-4 border-white">
+                  Thorough Proofreading of your archives
+              </span>
+              <span class="absolute -bottom-7 right-12 w-16 rounded-full aspect-square bg-[#cf190e] inline-grid items-center text-center">
+                  <i class="fa text-2xl fa-bullhorn" aria-hidden="true"></i>
+              </span>
+          </div>
+          <div class="relative w-screen aspect-square lg:w-auto bg-cover flex flex-col items-center justify-center bg-center" style="background-image:linear-gradient(rgba(42, 69, 112, 0.7), rgba(42, 69, 112, 0.7) ), url('./resources/grid-8.jpg')">
+              <h1 class="text-2xl mb-3 font-bold text-center">
+                  AUDIO AND VIDEO </br>TRANSCRIPTION
+              </h1>
+              <span class="px-10 text-center w-fit mt-4 border-white">
+                  Comprehensive audio and visual content translations
+              </span>
+              <span class="absolute -bottom-7 right-12 w-16 rounded-full aspect-square bg-[#cf190e] inline-grid items-center text-center">
+                  <i class="fa text-2xl fa-desktop" aria-hidden="true"></i>
+              </span>
+          </div>
+          <div class="relative w-screen aspect-square lg:w-auto bg-cover flex flex-col items-center justify-center bg-center" style="background-image:linear-gradient(rgba(42, 69, 112, 0.7), rgba(42, 69, 112, 0.7) ), url('./resources/grid-9.jpg')">
+              <h1 class="text-2xl mb-3 font-bold text-center">
+                  DIAGRAMMING OR </br>DESKTOP PUBLISHING
+              </h1>
+              <span class="px-10 text-center w-fit mt-4 border-white">
+                  Editing and processing of texts or images
+              </span>
+              <span class="absolute -bottom-7 right-12 w-16 rounded-full aspect-square bg-[#cf190e] inline-grid items-center text-center">
+                  <i class="fa text-2xl fa-pencil-ruler" aria-hidden="true"></i>
+              </span>
+          </div>
     </div>
     <!-- ######################################################### -->
     <div class="flex flex-col-reverse lg:px-64 lg:flex-row w-screen justify-center bg-[#111781]">
@@ -39,7 +140,9 @@
                 <h1>
                     Freedom Translations is a company specialized in providing linguistic advice services (translations).
                 </h1>
-                <button class="border-2  py-3 px-6 font-semibold w-fit mt-4 border-white">KNOW MORE</button>
+                <button class="border-2  py-3 px-6 font-semibold w-fit mt-4 border-white hover:bg-white hover:border-white hover:text-red-600">
+                    KNOW MORE
+                </button>
             </div>
             <div class="h-80 w-screen lg:w-2/4 lg:h-96 bg-left-top lg:bg-center bg-cover" style="background-image: url('./resources/whatwedo.jpg');">
             </div>

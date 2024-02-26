@@ -85,7 +85,18 @@
                 <label class="font-medium" for="mobile-input">Mobile:</label><br>
                 <input class="px-2.5 py-2.5 my-2" type="text" id="mobile-input" name="mobile-input"><br>
                 <label class="font-medium" for="service-input">Select a service:</label><br>
-                <input class="px-2.5 py-2.5 my-2" type="text" id="mobile-input" name="mobile-input"><br>
+                <select class="w-full px-2.5 py-2.5 my-2" type="text" id="mobile-input" name="mobile-input">
+                    <option value="Technical Translation">Technical Translation</option>
+                    <option value="Legal Translation">Legal Translation</option>
+                    <option value="Regular Translation">Regular Translation</option>
+                    <option value="Sworn Translation">Sworn Translation</option>
+                    <option value="Certified Affidavit Translation">Certified Affidavit Translation</option>
+                    <option value="Subtitling">Subtitling</option>
+                    <option value="Proofreading">Proofreading</option>
+                    <option value="Audio and Video Transcription">Audio and Video Transcription</option>
+                    <option value="Diagramming or desktop publishing">Diagramming or desktop publishing</option>
+                </select>
+                    <br>
                 <label class="font-medium" for="comments-input">Comments:</label><br>
                 <textarea class="px-2.5 py-2.5 my-2" rows="4" id="coments-input" name="comments-input"></textarea><br>
                 <input class="bg-gray-700 p-2.5 my-2 rounded text-white font-semibold" type="submit" value="Send">
@@ -104,13 +115,16 @@
             </h1>
         </div>
         <div class="w-full flex flex-col lg:flex-row justify-center">
-            <button class="bg-[#111781] px-8 py-6 rounded-md lg:mr-10">
+            <a href="https://telegram.me/Freedom_Translations" 
+                class="flex bg-[#111781] px-8 py-6 rounded-md lg:mr-10">
+                <img class="w-4 mr-2" src="resources/telegram.svg"></img>
                 Talk to us on Telegram
-            </button>
-            <button class="bg-[#111781] px-8 py-6 rounded-md">
-                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a href="https://wa.me/5521976221515?text="
+                class="flex bg-[#111781] px-8 py-6 rounded-md">
+                <img class="w-4 mr-2" src="resources/whatsapp.svg"></img>
                 Talk to us on WhatsApp
-            </button>
+            </a>
         </div>
     </div>
     <!-- ######################################################### -->

@@ -8,6 +8,8 @@ function toggleMenu() {
     document.getElementById("mobile-menu").style.display = "flex";
 }
 
+document.getElementById("mobile-menu").style.display = "none";
+
 document
     .getElementById("mobile-menu-btn")
     .addEventListener("click", toggleMenu);

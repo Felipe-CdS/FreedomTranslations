@@ -5,6 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -13,6 +17,13 @@
   </head>
   <!-- ######################################################### -->
   <body class="min-h-screen w-screen text-white">
+      <div id="modal-div" class="hidden w-screen h-screen bg-black bg-opacity-80 inset-0 sticky z-10 flex items-center justify-center">
+          <div class="px-10  py-5 bg-white text-black text-center rounded">
+            <h1 class="text-3xl">Muito Obrigado!</h1>
+              <h1>Sua mensagem foi enviada com sucesso.</h1>
+            <button id="modal-button" class=" mt-3 py-1 px-2 bg-gray-700 rounded text-white">close</button>
+          </div>
+      </div>
       <div class="flex h-[60dvh] w-screen flex-col">
           <div class="m-0 flex items-center justify-between lg:justify-center bg-black p-6 lg:p-4 w-screen">
               <a href="inicio.html"><img class="h-12 lg:h-16 lg:mr-5" src="./resources/logo01-Cropped.png"></img></a>
@@ -87,7 +98,7 @@
             </div>
         </div>
         <div class="w-full lg:w-2/4 px-10 lg:px-0 flex flex-col justify-center items-center">
-            <form>
+            <form id="contact-form">
                 <label class="font-medium" for="name-input">Nome:</label><br>
                 <input class="px-2.5 py-2.5 my-2" type="text" id="name-input" name="name-input"><br>
                 <label class="font-medium" for="email-input">Email:</label><br>
@@ -111,7 +122,9 @@
                 <br>
                 <label class="font-medium" for="comments-input">Observações:</label><br>
                 <textarea class="px-2.5 py-2.5 my-2" rows="4" id="coments-input" name="comments-input"></textarea><br>
-                <input class="bg-gray-700 p-2.5 my-2 rounded text-white font-semibold" type="submit" value="Enviar">
+                <input class="bg-gray-700 p-2.5 my-2 rounded text-white font-semibold cursor-pointer" type="submit" id="send-button" value="Enviar">
+                <button class="w-full hidden justify-around bg-gray-700 p-2.5 my-2 rounded text-white font-semibold cursor-pointer" id="loading-button" disabled>
+                <img class="h-6" src="./resources/tube-spinner.svg"></img>
             </form>
         </div>
     </div>
